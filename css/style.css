@@ -1,0 +1,247 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background: #e7e7f1;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1260px;
+  margin: 50px auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.course {
+  margin-right: 12px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #7A7A7A;
+}
+
+.statistic {
+  display: flex;
+  margin: 15px;
+  align-items: center;
+}
+
+.left-pozition {
+  display: flex;
+  align-items: center;
+}
+
+.right-pozition {
+  margin-right: 31px;
+}
+
+.icon-bar {
+  display: flex;
+  align-items: center;
+}
+
+.icon-list {
+  margin-right: 31px;
+  display: flex;
+  align-items: center;
+}
+
+.search-btn {
+  background-color: #fff;
+  border: 1px solid #fff;
+  padding-left: 350px;
+}
+
+.icon-item {
+  margin-right: 31px;
+  align-items: center;
+  display: flex;
+}
+
+.dollar {
+  font-size: 16px;
+  line-height: 19px;
+  color: #285193;
+}
+.ruble {
+  font-size: 16px;
+  line-height: 19px;
+  color: #285193;
+}
+.euro {
+  font-size: 16px;
+  line-height: 19px;
+  color: #285193;
+}
+
+.lang-text {
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  line-height: 19px;
+  color: #535353;
+}
+
+.lang-text::before {
+  content: '';
+  background-image: url("../img/lang-icon.png");
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.telegram-text {
+  display: flex;
+  color: #fff;
+  padding: 10px;
+  justify-content: center;
+  background: linear-gradient(90deg, #1E96C8 15.07%, #37AEE2 85.96%);
+  border-radius: 5px;
+}
+
+.telegram-text::before {
+  content: '';
+  background-image: url("../img/telegram.png");
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.nav-list {
+  display: flex;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 0 20px rgba(197, 189, 189, 0.089);
+  justify-content: space-between;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 23px;
+  color: #948787;
+  transition: all 0.7s ease;
+}
+
+.nav-link:hover {
+  background-color: transparent;
+  color: #000000;
+  transition: all 0.7s ease;
+}
+
+.nav-item {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.covid-list {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  background-color:#F6F6F9;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.covid::before {
+  content: '';
+  background-image: url("../img/covid-icon.png");
+  width: 43px;
+  height: 45px;
+  margin-right: 15px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.infact::before {
+  content: '';
+  background-image: url("../img/infected-icon.png");
+  margin-right: 15px;
+  width: 43px;
+  height: 45px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.good::before {
+  content: '';
+  background-image: url("../img/recovered-icon.png");
+  margin-right: 15px;
+  width: 43px;
+  height: 45px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.dead::before {
+  content: '';
+  background-image: url("../img/dead-icon.png");
+  margin-right: 15px;
+  width: 43px;
+  height: 45px;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.covid-black {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  border-right: 4px solid rgb(252, 16, 16);
+  padding-right: 50px;
+}
+
+.info-title-red {
+  font-size: 18px;
+  line-height: 21px;
+  color: #DB0000;
+}
+
+.info-title-green {
+  font-size: 18px;
+  line-height: 21px;
+  color: #05B135;
+}
+
+.black-title {
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  }
+
+.info-title-h2 {
+  border-right: 4px solid rgb(223, 215, 215);
+  padding-right: 50px;
+  margin: 25px 0;
+}
+
+
+
+
