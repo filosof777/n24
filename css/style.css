@@ -31,26 +31,28 @@ a {
   justify-content: space-between;
 }
 
+.header-container {}
+
 .course {
-  margin-right: 12px;
-  font-size: 16px;
-  line-height: 19px;
   color: #7A7A7A;
+  align-items: center;
+  display: flex;
 }
 
 .statistic {
   display: flex;
-  margin: 15px;
   align-items: center;
 }
 
 .left-pozition {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .right-pozition {
-  margin-right: 31px;
+  align-items: center;
+  display: flex;
 }
 
 .icon-bar {
@@ -59,37 +61,50 @@ a {
 }
 
 .icon-list {
-  margin-right: 31px;
   display: flex;
   align-items: center;
+  padding: 0;
 }
 
 .search-btn {
-  background-color: #fff;
-  border: 1px solid #fff;
-  padding-left: 350px;
+  background-image: url("../img/search-icon.png");
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #e7e7f1;
 }
 
+
+
+
 .icon-item {
-  margin-right: 31px;
+  margin-left: 31px;
   align-items: center;
   display: flex;
 }
 
-.dollar {
-  font-size: 16px;
-  line-height: 19px;
-  color: #285193;
+.course-before::before {
+  content: '';
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 17px;
+  margin-left: 17px;
+  background-size: cover;
 }
-.ruble {
-  font-size: 16px;
-  line-height: 19px;
-  color: #285193;
+
+.dollar::before {
+  background-image: url("../img/dollar.png");
 }
-.euro {
-  font-size: 16px;
-  line-height: 19px;
-  color: #285193;
+.ruble::before {
+  background-image: url("../img/ruble.png");
+}
+.euro::before {
+  background-image: url("../img/euro.png");
 }
 
 .lang-text {
@@ -97,6 +112,7 @@ a {
   font-weight: 500;
   font-size: 16px;
   display: flex;
+  cursor: pointer;
   line-height: 19px;
   color: #535353;
 }
@@ -125,10 +141,12 @@ a {
   background-image: url("../img/telegram.png");
   width: 20px;
   height: 20px;
+  border: 0.5px #1E96C8;
   margin-right: 5px;
   background-repeat: no-repeat;
   display: inline-block;
 }
+
 
 .nav-list {
   display: flex;
@@ -160,53 +178,20 @@ a {
 
 .covid-list {
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   display: flex;
   align-items: center;
   background-color:#F6F6F9;
+  padding: 21px 88px 21px 35px;
 }
 
 .info {
+  content: "";
+  background-repeat: no-repeat;
+  display: inline-block;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-}
-
-.covid::before {
-  content: '';
-  background-image: url("../img/covid-icon.png");
-  width: 43px;
-  height: 45px;
-  margin-right: 15px;
-  background-repeat: no-repeat;
-  display: inline-block;
-}
-.infact::before {
-  content: '';
-  background-image: url("../img/infected-icon.png");
-  margin-right: 15px;
-  width: 43px;
-  height: 45px;
-  background-repeat: no-repeat;
-  display: inline-block;
-}
-.good::before {
-  content: '';
-  background-image: url("../img/recovered-icon.png");
-  margin-right: 15px;
-  width: 43px;
-  height: 45px;
-  background-repeat: no-repeat;
-  display: inline-block;
-}
-.dead::before {
-  content: '';
-  background-image: url("../img/dead-icon.png");
-  margin-right: 15px;
-  width: 43px;
-  height: 45px;
-  background-repeat: no-repeat;
-  display: inline-block;
+  justify-content: space-between;
 }
 
 .covid-black {
@@ -214,34 +199,96 @@ a {
   font-size: 20px;
   line-height: 24px;
   color: #000000;
-  border-right: 4px solid rgb(252, 16, 16);
-  padding-right: 50px;
+}
+
+.covid::before {
+  content: "";
+  background-image: url("../img/covid-icon.png");
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 43px;
+  height: 45px;
+  margin-right: 25px;
+}
+
+
+.covid::after {
+  content: "";
+  background-image: url("../img/big-column.png");
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 2px;
+  height: 74px;
+  margin-left: 71px;
+}
+
+.infact::before {
+  content: "";
+  background-image: url("../img/infected-icon.png");
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 38px;
+  height: 40px;
+  margin-right: 25px;
+}
+
+.infact::after,
+.good::after {
+  content: "";
+  background-image: url("../img/small-column.png");
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 2px;
+  height: 49px;
+  margin-left: 42px;
+}
+
+.good::before {
+  content: "";
+  background-image: url("../img/recovered-icon.png");
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 38px;
+  height: 40px;
+  margin-right: 25px;
+}
+
+.dead::before {
+  content: "";
+  background-image: url("../img/dead-icon.png");
+  display: inline-block;
+  background-repeat: no-repeat;
+  width: 38px;
+  height: 38.8px;
+  margin-right: 25px;
 }
 
 .info-title-red {
+  font-weight: normal;
   font-size: 18px;
   line-height: 21px;
   color: #DB0000;
+  margin-bottom: -13px;
 }
 
 .info-title-green {
+  font-weight: normal;
   font-size: 18px;
   line-height: 21px;
   color: #05B135;
+  margin-bottom: -13px;
 }
 
 .black-title {
+  font-weight: normal;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  }
-
-.info-title-h2 {
-  border-right: 4px solid rgb(223, 215, 215);
-  padding-right: 50px;
-  margin: 25px 0;
 }
 
-
-
-
+.info-text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
